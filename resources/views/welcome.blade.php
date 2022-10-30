@@ -1,6 +1,5 @@
 @extends('layout.app')
 
 @section('content')
-    <h1>Picos</h1>
-    <p>asdasd</p>
+    <h1 style="text-align: center">q</h1>
 @endsection
