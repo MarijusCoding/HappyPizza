@@ -25,7 +25,15 @@
         <input type="image" src="{{ asset('toggle_icon.png') }}" id="toggle" class="sm:hidden block float-right">
       </div>
     </div>
-    <h1 style="visibility:hidden" id="teks">LABAS</h1>
+    <h1 style="display: none;" >LABAS</h1>
+    <div class="text-center absolute mx-auto" style="display: none" id="teks">
+      <ul class=" list-none px-0">
+        <li><a href="#" class="text-2xl text-black font-sans no-underline transition-opacity duration-200" style="z-index: 1" id="hambur">MENIU</a></li><hr class="w-24">
+        <li><a href="#" class="text-2xl text-black font-sans no-underline transition-opacity duration-200" style="z-index: 1" id="hambur">UŽSISAKYK</a></li><hr class="w-24">
+        <li><a href="#" class="text-2xl text-black font-sans no-underline transition-opacity duration-200" style="z-index: 1" id="hambur">KONTAKTAI</a></li><hr class="w-24">
+        <li><a href="#" class="text-2xl text-black font-sans no-underline transition-opacity duration-200" style="z-index: 1" id="hambur">APIE</a></li><hr class="w-24">
+      </ul>
+    </div>
     @yield('content')
 </body>
 </html>
