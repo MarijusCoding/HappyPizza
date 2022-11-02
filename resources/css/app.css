@@ -1,3 +1,10 @@
-/* @tailwind base; STYLINGAS DINGES */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .prods {
+    filter: brightness(50%);
+}*/
+.prods:hover {
+    @apply brightness-100
+} 

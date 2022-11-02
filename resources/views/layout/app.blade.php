@@ -7,8 +7,8 @@
     <title>Happy Pizza</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="m-0">
-    <div class="flex bg-gradient-to-b from-red-500 m-0 sm:justify-evenly sm:pt-0 pt-1 sm:pl-0 pl-5 items-center border-2">
+<body class="m-0 p-0">
+    <div class="fixed top-0 w-full z-10 inline-flex bg-gradient-to-b border-0 from-red-500 to-white m-0 sm:justify-evenly sm:pt-0 pt-1 sm:pl-0 pl-5 items-center" id="navas">
       {{-- <div class="inline-block"> --}}
         <a href="#" class="text-2xl font-light no-underline text-black font-sans transition-all duration-150 hover:pb-2 hidden sm:flex">MENIU</a>
         <a href="#" class="text-2xl font-light no-underline text-black font-sans transition-all duration-150 hover:pb-2 hidden sm:flex">UŽSISAKYK</a>
@@ -25,15 +25,16 @@
         <input type="image" src="{{ asset('toggle_icon.png') }}" id="toggle" class="sm:hidden block float-right">
       </div>
     </div>
-    <h1 style="display: none;" >LABAS</h1>
-    <div class="text-center absolute mx-auto" style="display: none" id="teks">
-      <ul class=" list-none px-0">
-        <li><a href="#" class="text-2xl text-black font-sans no-underline transition-opacity duration-200" style="z-index: 1" id="hambur">MENIU</a></li><hr class="w-24">
-        <li><a href="#" class="text-2xl text-black font-sans no-underline transition-opacity duration-200" style="z-index: 1" id="hambur">UŽSISAKYK</a></li><hr class="w-24">
-        <li><a href="#" class="text-2xl text-black font-sans no-underline transition-opacity duration-200" style="z-index: 1" id="hambur">KONTAKTAI</a></li><hr class="w-24">
-        <li><a href="#" class="text-2xl text-black font-sans no-underline transition-opacity duration-200" style="z-index: 1" id="hambur">APIE</a></li><hr class="w-24">
+    <div class="fixed top-20 text-center items-center justify-center mx-auto w-full bg-white" style="display: none; z-index: 900;" id="teks">
+      <ul class="list-none px-0">
+        <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">MENIU</a></li><hr class="w-24">
+        <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">UŽSISAKYK</a></li><hr class="w-24">
+        <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">KONTAKTAI</a></li><hr class="w-24">
+        <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">APIE</a></li>
       </ul>
     </div>
-    @yield('content')
+    <div class="flex flex-wrap justify-around pt-44">
+      @yield('content')
+    </div>
 </body>
 </html>
