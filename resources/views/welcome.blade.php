@@ -2,11 +2,13 @@
 
 @section('content')
         @for ($i = 0; $i < 15; $i++)
-        <div class="relative inline-block max-w-md min-w-min p-3" style="">
-            <img src="{{ asset("picos/1.jpg") }}" class="w-full brightness-50 hover:brightness-75 transition-all duration-300" style="filter: brightness(50%)" alt="">
-            <h2>Titleas</h2>
-            <a href="#" class=" absolute font-sans no-underline border-3 border-red-700 bg-red-600 hover:bg-red-700 py-3 px-5 bottom-6 right-6 text-white rounded-full actove:bg-red-800">Išsamiau</a>
+        <div class="relative inline-block max-w-md min-w-min p-3 overflow-hidden" style="">
+            {{-- TODO: padaryti :hover kad scale 1.2 same size --}}
+            {{-- FIXME: https://w3bits.com/css-image-hover-zoom/ --}}
+            <img src="{{ asset("picos/1.jpg") }}" class="w-full brightness-50 hover:brightness-75 transition duration-200" alt=""> 
+            <h2 class="absolute top-10 left-10 text-white font-extrabold font-mono text-2xl">Gaveria MONO</h2>
+            <a href="#" class=" absolute font-sans no-underline border-3 border-red-700 bg-red-600 hover:bg-red-700 py-2 px-5 bottom-8 right-8 text-white rounded-lg active:bg-red-800">Išsamiau</a>
         </div>
-        @endfor
         
+        @endfor
 @endsection

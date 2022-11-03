@@ -27,9 +27,9 @@
     </div>
     <div class="fixed text-center items-center justify-center mx-auto w-full bg-white" style="display: none; z-index: 900; top: 4.9rem;" id="teks">
       <ul class="list-none py-2">
-        <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">MENIU</a></li><hr class="w-24">
-        <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">UŽSISAKYK</a></li><hr class="w-24">
-        <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">KONTAKTAI</a></li><hr class="w-24">
+        <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">MENIU</a></li><br><hr class="w-24"><br>
+        <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">UŽSISAKYK</a></li><br><hr class="w-24"><br>
+        <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">KONTAKTAI</a></li><br><hr class="w-24"><br>
         <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">APIE</a></li>
       </ul>
     </div>
