@@ -25,7 +25,7 @@
         <input type="image" src="{{ asset('toggle_icon.png') }}" id="toggle" class="sm:hidden block float-right">
       </div>
     </div>
-    <div class="fixed text-center items-center justify-center mx-auto w-full bg-white" style="display: none; z-index: 900; top: 4.9rem;" id="teks">
+    <div class="fixed text-center items-center justify-center mx-auto w-full bg-white" style="display: none; z-index: 40; top: 4.9rem;" id="teks">
       <ul class="list-none py-2">
         <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">MENIU</a></li><br><hr class="w-24"><br>
         <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">UŽSISAKYK</a></li><br><hr class="w-24"><br>
@@ -33,13 +33,27 @@
         <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">APIE</a></li>
       </ul>
     </div>
-    <div class="">
-        <img src="{{ asset("home.png") }}" class="" alt="">
-        <img src="{{ asset("home.png") }}" class="" alt="">
-        <img src="{{ asset("home.png") }}" class="" alt="">
-        <img src="{{ asset("home.png") }}" class="" alt="">
+    {{--
+      FIXME:
+        - Nesilygina gerai justify-evenly ant <img>
+        - Linkai neveikia  
+    --}}
+    <div class="w-full fixed inline-flex m-0 justify-evenly">
+      <a href="#" class=" absolute bg-red-600 top-24 z-50 m-0 p-0">
+        <img src="{{ asset("home.png") }}"  alt="">
+      </a>
+      <a href="#" class=" absolute bg-red-600 top-24 z-50 m-0 p-0">
+        <img src="{{ asset("home.png") }}" class=" absolute bg-red-600 top-24 z-50" alt="">
+      </a>
+      <a href="#" class=" absolute bg-red-600 top-24 z-50 m-0 p-0">
+        <img src="{{ asset("home.png") }}" class=" absolute bg-red-600 top-24 z-50" alt="">
+      </a>
+      <a href="#" class=" absolute bg-red-600 top-24 z-50 m-0 p-0">
+        <img src="{{ asset("home.png") }}" class=" absolute bg-red-600 top-24 z-50" alt="">
+      </a>
     </div>
-    <div class="flex flex-wrap justify-around sm:pt-32 pt-7">
+
+    <div class="flex flex-wrap justify-around sm:pt-32 pt-10">
       @yield('content')
     </div>
 </body>

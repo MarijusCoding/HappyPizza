@@ -2,7 +2,7 @@
 
 @section('content')
         @for ($i = 0; $i < 15; $i++)
-        <div class="relative inline-block max-w-md min-w-min p-3 " style="">
+        <div class="relative inline-block max-w-md min-w-min p-3 -z-10" style="">
             {{-- TODO: padaryti :hover kad scale 1.2 same size --}}
             {{-- FIXME: https://w3bits.com/css-image-hover-zoom/ --}}
             <img src="{{ asset("picos/1.jpg") }}" class="w-full brightness-50 hover:brightness-75 transition duration-300" alt=""> 
