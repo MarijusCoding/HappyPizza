@@ -17,8 +17,8 @@
         <a href="#"><img src="https://part.lt/img/f1f179e4c4cfee5953af021a0003e4b6965.png" class="sm:w-32 w-24"/></a>
       </div>
       {{-- <div class="inline-block"> --}}
-        <a href="#" class="text-2xl font-normal no-underline text-white font-sans transition-all duration-150 hover:pb-2 hidden sm:flex">KONTAKTAI</a>
-        <a href="#" class="text-2xl font-normal no-underline text-white font-sans transition-all duration-150 hover:pb-2 hidden sm:flex">APIE</a>
+        <a href="#" class="text-2xl font-light no-underline text-white font-sans transition-all duration-150 hover:pb-2 hidden sm:flex">KONTAKTAI</a>
+        <a href="#" class="text-2xl font-light no-underline text-white font-sans transition-all duration-150 hover:pb-2 hidden sm:flex">APIE</a>
       {{-- </div> --}}
       {{-- MOBILE VERSION --}}
       <div class="sm:hidden visible w-full px-5 float-right">
@@ -33,7 +33,13 @@
         <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">APIE</a></li>
       </ul>
     </div>
-    <div class="flex flex-wrap justify-around sm:pt-32 pt-20">
+    <div class="">
+        <img src="{{ asset("home.png") }}" class="" alt="">
+        <img src="{{ asset("home.png") }}" class="" alt="">
+        <img src="{{ asset("home.png") }}" class="" alt="">
+        <img src="{{ asset("home.png") }}" class="" alt="">
+    </div>
+    <div class="flex flex-wrap justify-around sm:pt-32 pt-7">
       @yield('content')
     </div>
 </body>
