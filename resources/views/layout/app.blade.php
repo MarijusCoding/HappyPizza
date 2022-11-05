@@ -25,35 +25,35 @@
         <input type="image" src="{{ asset('toggle_icon.png') }}" id="toggle" class="sm:hidden block float-right">
       </div>
     </div>
-    <div class="fixed text-center items-center justify-center mx-auto w-full bg-white" style="display: none; z-index: 40; top: 4.9rem;" id="teks">
+
+
+    {{-- OLD NAV MOBILE --}}
+    {{-- <div class="fixed text-center items-center justify-center mx-auto w-full bg-white" style="display: none; z-index: 40; top: 4.9rem;" >
       <ul class="list-none py-2">
         <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">MENIU</a></li><br><hr class="w-24"><br>
         <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">UŽSISAKYK</a></li><br><hr class="w-24"><br>
         <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">KONTAKTAI</a></li><br><hr class="w-24"><br>
         <li><a href="#" class="text-2xl text-black font-sans no-underline" id="hambur">APIE</a></li>
       </ul>
-    </div>
-    {{--
-      FIXME:
-        - Nesilygina gerai justify-evenly ant <img>
-        - Linkai neveikia  
-    --}}
-    <div class="w-full fixed inline-flex m-0 justify-evenly">
-      <a href="#" class=" absolute bg-red-600 top-24 z-50 m-0 p-0">
-        <img src="{{ asset("home.png") }}"  alt="">
+    </div> --}}
+
+
+    <div class="fixed top-2 justify-around w-full" style="display: none; z-index: 40; top: 5.5rem" id="teks">
+      <a href="#" class="bg-red-700 px-4 rounded-full bg-gradient-to-br from-red-700 to-red-300 border-black border">
+        <img src="{{ asset("icons/home.png") }}" alt="">
       </a>
-      <a href="#" class=" absolute bg-red-600 top-24 z-50 m-0 p-0">
-        <img src="{{ asset("home.png") }}" class=" absolute bg-red-600 top-24 z-50" alt="">
+      <a href="#" class="bg-red-700 px-4 rounded-full bg-gradient-to-br from-red-700 to-red-300 border-black border">
+        <img src="{{ asset("icons/order.png") }}" alt="">
       </a>
-      <a href="#" class=" absolute bg-red-600 top-24 z-50 m-0 p-0">
-        <img src="{{ asset("home.png") }}" class=" absolute bg-red-600 top-24 z-50" alt="">
+      <a href="#" class="bg-red-700 px-4 rounded-full bg-gradient-to-br from-red-700 to-red-300 border-black border">
+        <img src="{{ asset("icons/contacts.png") }}" alt="">
       </a>
-      <a href="#" class=" absolute bg-red-600 top-24 z-50 m-0 p-0">
-        <img src="{{ asset("home.png") }}" class=" absolute bg-red-600 top-24 z-50" alt="">
+      <a href="#" class="bg-red-700 px-4 rounded-full bg-gradient-to-br from-red-700 to-red-300 border-black border">
+        <img src="{{ asset("icons/about.png") }}" alt="">
       </a>
     </div>
 
-    <div class="flex flex-wrap justify-around sm:pt-32 pt-10">
+    <div class="flex flex-wrap justify-around sm:pt-32 pt-20">
       @yield('content')
     </div>
 </body>
